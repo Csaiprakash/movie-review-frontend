@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "https://movie-review-backend-3wee.onrender.com",
 });
 
 api.interceptors.request.use((config) => {
