@@ -22,10 +22,10 @@ function MovieReviewPage() {
         useState("");
 
     useEffect(() => {
-        loadMovie();
-        loadReview();
-
-    }, []);
+    loadMovie();
+    loadReview();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
     const loadMovie = async () => {
 
